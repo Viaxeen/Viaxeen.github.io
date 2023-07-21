@@ -1,0 +1,130 @@
+body {
+    font-family: 'Titillium', sans-serif;
+}
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+}
+.header-right {
+    text-align: center;
+    height: 80px;
+}
+.header-bottom-left {
+    padding-top: 20px;
+    border-top: 1px dotted grey;
+    width: 100%;
+    border-top: 1px dashed #424141;
+}
+.header-bottom-left a {
+    text-decoration: none;
+}
+.header-bottom-right {
+    display: flex;
+}
+.name {
+    margin-top: 15px;
+} 
+.title {
+    margin-top: 10px;
+    font-size: 50px;
+    color: #424141;
+}
+.desc1 {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    color: #424141; 
+}
+.image {
+    display: block;
+    max-width: 100%;
+    margin: 35px auto;
+}
+.click {
+    width: 190px;
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #424141;
+    padding: 17px 60px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20); 
+}
+.click span {
+    position: relative; 
+    z-index: 1;
+}
+.click:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #ceab7d;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg); 
+}
+.click:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.logo {
+    margin: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    
+}
+.buttons a {
+    margin-left: -10px;
+}
+.buttons i {
+    font-size: 20px;
+    text-align: center;
+    padding: 9px 0;
+    margin:  0 10px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    color: #fefefe;
+    border: 2px solid #fefefe;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.buttons i:hover {
+    transform: scale(1.2 , 1.2);
+    border: 2px solid #ceab7d;
+    color: #ceab7d;
+}
+.footer {
+    background-color: #424141;
+}
+.footer1 {
+    width: 400px;
+    color:#fefefe;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer1 p {
+    font-size: 10px;
+}
+
+
+
